@@ -20,8 +20,15 @@
     pip install -r requirements.txt
     
     ```
+
+## 4.运行代码
+在命令行或终端中，进入代码所在的目录，并执行以下命令来运行程序：
+'''
+python Calculator.py
+'''
+
     
-## 4.使用示例
+## 5.使用示例
 cos函数
 
 
