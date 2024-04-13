@@ -22,7 +22,14 @@ class CalculatorLogic:
 
     # 计算表达式的方法
     def calculate(self, expression):
-        return self._evaluate_expression(expression)
+        try:
+            return self._evaluate_expression(expression)
+        except ZeroDivisionError:
+            return "Error: Division by zero"
+        except ValueError as e:
+            return f"Error: {str(e)}"
+        except Exception as e:
+            return f"Error: {str(e)}"
 
     # 私有方法：评估表达式
     def _evaluate_expression(self, expression):
@@ -90,6 +97,8 @@ class CalculatorLogic:
                 left_operand = self._evaluate_expression(expression[:index].strip())
                 right_operand = self._evaluate_expression(expression[index + 1:].strip())
                 operator_func = self._get_operator_function(operator)
+                if operator == '/' and right_operand == 0:
+                    raise ZeroDivisionError("Division by zero")
                 return operator_func(left_operand, right_operand)
 
         # 如果没有运算符，则直接返回表达式的值
