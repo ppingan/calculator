@@ -1,0 +1,14 @@
+Matlab调用写好的三角函数python文件流程：
+1.Matlab与Python的版本要相互对应
+本机使用的是MatlabR2022b,python3.9版本
+2.需要通过在命令行运行pyenv查找python，若未找到，执行：
+pyenv('Version', 'C:\Python\python.exe（你的python路径）');
+再使用pyenv，出现python版本即可。
+  PythonEnvironment - 属性:
+
+          Version: "3.9"
+       Executable: "C:\Program Files\Python39\python.exe"
+          Library: "C:\Program Files\Python39\python39.dll"
+             Home: "C:\Program Files\Python39"
+           Status: NotLoaded
+    ExecutionMode: InProcess
