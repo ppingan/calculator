@@ -29,12 +29,13 @@ python Calculator.py
     
  ```
     
-## 5.使用示例
+## 5.使用示例（matlab_UI）
 cos函数
 
 
 
-![图片描述](readme_imgs/cos.png)
+![image](https://github.com/ppingan/calculator/assets/165746199/33d79ea3-1e22-443e-ac70-42d32a46a80b)
+
 
 
 
@@ -42,4 +43,4 @@ actan函数
 
 
 
-![图片描述](readme_imgs/arctan.png)
+![image](https://github.com/ppingan/calculator/assets/165746199/3523ab09-118e-44d8-bc45-862be85e63e5)
